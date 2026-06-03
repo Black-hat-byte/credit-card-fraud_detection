@@ -1,69 +1,68 @@
 # 💳 Credit Card Fraud Detection System
-> A production-ready ML system to detect fraudulent credit card transactions in real-time, complete with an interactive Streamlit dashboard.
+> A real-time ML-powered system that identifies fraudulent credit card transactions, backed by an interactive Streamlit dashboard.
 
 ---
 
 ## 🚀 Live Demo
-Built and deployed via Streamlit + ngrok on Google Colab
+Deployed using Streamlit and ngrok directly on Google Colab — no local setup needed.
 
 ---
 
-## 📌 Problem Statement
-Credit card fraud is a major challenge in financial systems.
-This project tackles the core challenge of **highly imbalanced data** (originally only 148 fraud vs 49,456 legit transactions) and builds a real-time fraud detection system.
+## 📌 Why This Project?
+Financial fraud is one of the biggest threats in today's digital payment ecosystem. The real challenge here wasn't just building a model — it was handling **severely imbalanced data** where fraudulent transactions made up less than 0.3% of the entire dataset (only 148 fraud cases out of 49,456 transactions). This project addresses that head-on with a complete end-to-end pipeline.
 
 ---
 
-## 📊 Dataset
-- Source: Kaggle (creditcard_2023.csv)
-- Total Records: 49,605 transactions
-- Features: 28 PCA-transformed features (V1-V28) + Amount
-- Target: Class (0 = Legitimate, 1 = Fraudulent)
-- Challenge: Highly imbalanced (only 0.3% fraud cases)
+## 📊 Dataset Details
+- **Source:** Kaggle — `creditcard_2023.csv`
+- **Size:** 49,605 transactions
+- **Input Features:** 28 PCA-transformed variables (V1–V28) along with transaction Amount
+- **Label:** Class column — `0` for Legitimate, `1` for Fraudulent
+- **Key Challenge:** Extreme class imbalance (~0.3% fraud rate)
 
 ---
 
-## ⚙️ Methodology
-1. **EDA** — Statistical analysis, correlation heatmap, class distribution visualization
-2. **Preprocessing** — StandardScaler, SimpleImputer, stratified train-test split (80-20)
-3. **Class Balancing** — Oversampling to achieve 42.63% fraud ratio (284,315 legit vs 211,287 fraud)
-4. **Model Training** — Logistic Regression vs Random Forest
-5. **Evaluation** — Confusion Matrix + Classification Report
-6. **Deployment** — Streamlit dashboard + ngrok
+## ⚙️ How It Works
+1. **Exploratory Data Analysis** — Visualized distributions, correlations, and class imbalance
+2. **Data Preprocessing** — Applied StandardScaler & SimpleImputer; used stratified 80-20 split
+3. **Handling Imbalance** — Used oversampling to bring fraud ratio up to 42.63% (284,315 legit vs 211,287 fraud samples)
+4. **Model Building** — Trained and compared Logistic Regression and Random Forest classifiers
+5. **Performance Evaluation** — Assessed using Confusion Matrix and detailed Classification Report
+6. **Dashboard Deployment** — Wrapped everything in a Streamlit app, exposed via ngrok
 
 ---
 
-## 🤖 Models & Results
-| Model | Accuracy | F1-Score (Fraud) |
-|-------|----------|-----------------|
+## 🤖 Model Comparison
+| Model | Accuracy | F1-Score (Fraud class) |
+|-------|----------|------------------------|
 | Logistic Regression | 99.82% | 0.72 |
 | **Random Forest** ✅ | **99.92%** | **0.88** |
 
-> Random Forest selected as final model — saved as `fraud_detection_model.pkl`
+> **Final Model:** Random Forest — exported as `fraud_detection_model.pkl` using Joblib
 
 ---
 
-## 🖥️ Streamlit Dashboard Features
-- 📊 Dataset Overview
-- 📈 Fraud vs Legitimate Class Distribution
-- 🔥 Correlation Heatmap
-- 🔍 Real-time Fraud Detection App
-- 🔒 Privacy-first — No data logging
+## 🖥️ Dashboard Highlights
+- 📊 Full dataset summary and statistics
+- 📈 Visual breakdown of fraud vs legitimate transactions
+- 🔥 Feature correlation heatmap
+- 🔍 Live transaction checker — enter values and get instant predictions
+- 🔒 No data stored or logged — completely privacy-safe
 
 ---
 
 ## 🛠️ Tech Stack
-| Category | Tools |
-|----------|-------|
+| Category | Tools Used |
+|----------|------------|
 | Language | Python |
-| ML Models | Scikit-learn |
-| Data | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Dashboard | Streamlit |
-| Deployment | ngrok, Google Colab |
-| Model Saving | Joblib (.pkl) |
+| ML Framework | Scikit-learn |
+| Data Handling | Pandas, NumPy |
+| Visualizations | Matplotlib, Seaborn |
+| Web Dashboard | Streamlit |
+| Deployment | ngrok + Google Colab |
+| Model Export | Joblib (`.pkl` format) |
 
 ---
 
 ## 👨‍💻 Developed By
-**Anuj Pratap Maurya**
+**Anuj Pratap Maurya**  
