@@ -56,7 +56,7 @@ Financial fraud is one of the biggest threats in today's digital payment ecosyst
 ## 🖥️ Dashboard Screenshots
 
 ### Dataset Overview
-![Dashboard](img-dashboard.png)
+![Dataset](img-dataset.png)
 
 ### Class Distribution
 ![Class](img-classD.png)
