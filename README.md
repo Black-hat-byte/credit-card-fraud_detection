@@ -49,7 +49,24 @@ Financial fraud is one of the biggest threats in today's digital payment ecosyst
 - 🔍 Live transaction checker — enter values and get instant predictions
 - 🔒 No data stored or logged — completely privacy-safe
 
+- 
+
 ---
+
+## 🖥️ Dashboard Screenshots
+
+### Dataset Overview
+![Dashboard](img-dashboard.png)
+
+### Class Distribution
+![Class](img-classD.png)
+
+### Real-time Fraud Detection App
+![Prediction](img-detection.png)
+
+### Correlation Heatmap
+![Heatmap](img-heatmap.png)
+
 
 ## 🛠️ Tech Stack
 | Category | Tools Used |
