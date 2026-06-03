@@ -67,6 +67,9 @@ Financial fraud is one of the biggest threats in today's digital payment ecosyst
 ### Correlation Heatmap
 ![Heatmap](img-heatmap.png)
 
+### About
+![About](img-about.png)
+
 
 ## 🛠️ Tech Stack
 | Category | Tools Used |
